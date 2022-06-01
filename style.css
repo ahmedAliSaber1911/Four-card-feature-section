@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Very-Light-Gray);
+}
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+.container{
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+    width: 30vw;
+     margin-bottom: 40px;
+
+}
+.text2{
+ color: var(--Very-Dark-Blue);
+ margin-bottom: 10px;
+}
+.text1{
+    font-weight: 100;
+    margin-bottom: 10px;
+    
+}
+.text{
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    column-gap: 20px;
+}
+.card{
+    background-color:white;
+    width: 280px;
+    height: 200px;
+    border-radius: 3px;
+    padding: 15px;
+    box-shadow: 0px 6px 9px var(--Grayish-Blue);
+    position: relative;
+    padding: 20px;
+}
+.two{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+.one , .three{
+    margin-top: 100px;
+}
+.one{
+    border-top: 4px solid var(--Cyan);
+    
+}
+.top{
+    border-top: 4px solid var(--Red);
+}
+.bottom{
+    border-top: 4px solid var(--Orange);
+}
+.three{
+    border-top: 4px solid var(--Blue);
+}
+.card>h1{
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: var(--Very-Dark-Blue);
+}
+.card>p{
+    font-size: 13px;
+    color: var(--Grayish-Blue);
+    line-height: 1.2rem;
+}
+img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+}
